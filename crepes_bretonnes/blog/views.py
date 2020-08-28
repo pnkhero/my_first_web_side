@@ -4,11 +4,7 @@ from datetime import datetime
 from django.shortcuts import redirect
 
 def home(request):
-    """ Exemple de page non valide au niveau HTML pour que l'exemple soit concis """
-    return HttpResponse("""
-        <h1>Bienvenue sur mon blogizi !</h1>
-        <p>Les crêpes bretonnes ça tue des mouettes en plein vol izi !</p>
-    """)
+    return render(request, 'blog/accueil.html')
 
 def view_articles(request):
     """

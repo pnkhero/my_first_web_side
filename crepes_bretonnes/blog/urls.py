@@ -7,8 +7,8 @@ urlpatterns = [
     path('articles', views.view_articles),
     path('boy', views.view_boy),
     path('redirection', views.view_redirection),
-    path('date', views.date_act),
+    path('date', views.date_act, name="date"),
     path('addition/<int:nb1>/<int:nb2>/', views.addition),
     path('test', views.view_test),
-    path('luck', views.view_luck),
+    path('luck', views.view_luck, name="luck"),
 ]
